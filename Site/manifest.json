@@ -9,12 +9,12 @@
     "scope": "./",
     "icons": [
         {
-            "src": "https://via.placeholder.com/192",
+            "src": "image/banner.jpg",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://via.placeholder.com/512",
+            "src": "image/banner.jpg",
             "sizes": "512x512",
             "type": "image/png"
         }
@@ -24,7 +24,7 @@
             "name": "Ver Cardápio",
             "short_name": "Cardápio",
             "url": "./index.html#cardapio",
-            "icons": [{ "src": "https://via.placeholder.com/192", "sizes": "192x192", "type": "image/png" }]
+            "icons": [{ "src": "image/banner.jpg", "sizes": "192x192", "type": "image/png" }]
         }
     ]
 }
