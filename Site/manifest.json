@@ -1,30 +1,35 @@
 {
-    "name": "Catálogo Responsivo",
-    "short_name": "Catálogo",
-    "start_url": "./index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#333333",
-    "orientation": "portrait", 
-    "scope": "./",
-    "icons": [
-        {
-            "src": "image/banner.jpg",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "image/banner.jpg",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "shortcuts": [
-        {
-            "name": "Ver Cardápio",
-            "short_name": "Cardápio",
-            "url": "./index.html#cardapio",
-            "icons": [{ "src": "image/banner.jpg", "sizes": "192x192", "type": "image/png" }]
-        }
-    ]
+  "name": "Catálogo Responsivo - ComperBurger",
+  "short_name": "ComperBurger",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6600",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "image/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "image/manifest-icon-192.maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "image/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "image/manifest-icon-512.maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }
