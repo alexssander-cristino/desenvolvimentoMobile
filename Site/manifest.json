@@ -1,0 +1,30 @@
+{
+    "name": "Catálogo Responsivo",
+    "short_name": "Catálogo",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#333333",
+    "orientation": "portrait", 
+    "scope": "./",
+    "icons": [
+        {
+            "src": "https://via.placeholder.com/192",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://via.placeholder.com/512",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Ver Cardápio",
+            "short_name": "Cardápio",
+            "url": "./index.html#cardapio",
+            "icons": [{ "src": "https://via.placeholder.com/192", "sizes": "192x192", "type": "image/png" }]
+        }
+    ]
+}
