@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sideways Culture</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="inicio">
+        <div>
+            <h1>Sideways Culture</h1>
+        </div>
+        <nav class="nav">
+            <a href="#inicio">Início</a> 
+            <a href="#historia">História</a> 
+            <a href="#sobre">Sobre</a> 
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <canvas id="bgCanvas"></canvas>
+        <video id="bannerVideo" autoplay muted loop playsinline>
+        <source src="banner.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="inicio">
+        <h2>Bem-vindo ao Sideways Culture</h2>
+        <p>
+            O drift é mais do que uma técnica de pilotagem: é uma cultura que une paixão por carros, adrenalina e estilo de vida.
+            Aqui você vai encontrar informações sobre a história, pilotos, carros e eventos que marcaram essa modalidade incrível.
+        </p>
+    </section>
+
+    <section id="historia">
+        <h2>História do Drift</h2>
+        <p>
+        O drift teve suas origens nas montanhas do Japão durante os anos 1970, quando pilotos começaram a explorar técnicas de deslizar de lado nas curvas sinuosas das estradas "touge". Inicialmente, essa prática era vista como uma demonstração de habilidade e coragem, combinando velocidade, controle preciso do carro e ousadia para manobrar em curvas desafiadoras. 
+        </p>
+        <p>
+        Kunimitsu Takahashi, um dos primeiros pilotos a experimentar o estilo, abriu caminho para Keiichi Tsuchiya, que se tornaria conhecido como o "Drift King". Tsuchiya não apenas aprimorou as técnicas de drift, mas também ajudou a transformá-las em um esporte reconhecido. Nos anos 1990, com a criação da <strong>D1 Grand Prix</strong> no Japão, o drift passou a ter competições formais e começou a ganhar fãs pelo mundo, influenciando culturas automotivas na Europa, Estados Unidos e América Latina.
+        </p>
+        <p>
+        Hoje, o drift não é apenas uma técnica de pilotagem: é uma cultura global que combina performance, estilo e entretenimento, inspirando desde carros modificados até eventos internacionais que celebram a emoção do controle perfeito nas curvas.
+        </p>
+
+    </section>
+
+   <section id="sobre">
+    <h2>Sobre o Drift</h2>
+    <p>
+    O drift é uma técnica de condução em que o piloto faz o carro deslizar lateralmente em curvas, mantendo controle total e demonstrando precisão em cada movimento. Mais do que velocidade, o drift valoriza o ângulo, o estilo e a capacidade de manter o carro estável mesmo em situações extremas. Por isso, é considerado tanto um esporte quanto uma forma de arte automobilística.
+    </p>
+    <p>
+    Para executar drifts de forma eficiente, os carros passam por ajustes específicos, como suspensão reforçada, pneus de alta performance, diferencial limitado e motores calibrados. Cada detalhe influencia diretamente na capacidade de manter o controle durante longas curvas, exigindo técnica e prática constantes do piloto.
+    </p>
+    <p>
+    Além das habilidades técnicas, o drift cria uma experiência sensorial única, envolvendo velocidade, som do motor, fumaça dos pneus e a emoção de curvas desafiadoras. Isso faz com que o drift seja admirado não apenas pelos pilotos, mas também pelos espectadores que acompanham as competições e eventos ao redor do mundo.
+    </p>
+<br>
+    
+<h3>Carros mais usados</h3>
+<div class="card-carousel">
+    <div class="carousel-track">
+        <div class="carousel-item"> <img src="image/silvia15.jpg" alt="">Nissan Silvia</div>
+        <div class="carousel-item"> <img src="image/ae86.jpg" alt=""> Toyota AE86</div>
+        <div class="carousel-item"><img src="image/supra.jpg" alt=""> Toyota Supra</div>
+        <div class="carousel-item"><img src="image/skyline.jpg" alt=""> Nissan Skyline</div>
+        <div class="carousel-item"><img src="image/rx7.jpg" alt=""> Mazda RX-7</div>
+        <div class="carousel-item"><img src="image/bmw.jpg" alt=""> BMW E36 e E46</div>
+    </div>
+</div>
+
+    <section id="pilotos">
+    <h3>Pilotos famosos</h3>
+    <div class="pilotos-container">
+        <div class="piloto-card" onclick="toggleDesc(this)">
+            <img src="image/keiichi.png" alt="Keiichi Tsuchiya">
+            <h4>Keiichi Tsuchiya</h4>
+            <p class="descricao">Keiichi Tsuchiya é considerado o pioneiro do drift e um dos maiores ícones mundiais da modalidade. Sua habilidade e precisão transformaram o drift em um esporte reconhecido e respeitado. Tsuchiya popularizou técnicas avançadas, desenvolveu métodos de treinamento e inspirou gerações de pilotos a seguirem seus passos. Além das pistas, sua contribuição ajudou a difundir a cultura do drift, consolidando o Japão como berço dessa técnica única.
+</p>
+        </div>
+        <div class="piloto-card" onclick="toggleDesc(this)">
+            <img src="image/daigo.png" alt="Daigo Saito">
+            <h4>Daigo Saito</h4>
+            <p class="descricao">Daigo Saito é conhecido por seu estilo agressivo e inovador nas competições internacionais de drift. Piloto versátil, ele domina carros de alta potência e é capaz de executar manobras arriscadas com extrema precisão. Suas vitórias e performances consistentes o tornaram uma referência global, mostrando que o drift não é apenas habilidade, mas também estratégia e coragem.
+</p>
+        </div>
+        <div class="piloto-card" onclick="toggleDesc(this)">
+            <img src="image/kenblock.png" alt="Ken Block">
+            <h4>Ken Block</h4>
+            <p class="descricao">Ken Block ficou famoso pelos vídeos de Gymkhana, onde mistura drift, acrobacias e manobras espetaculares em ambientes urbanos e trilhas off-road. Seu estilo inovador popularizou o drift no mundo digital, atingindo milhões de espectadores e atraindo novos fãs. Ken Block é sinônimo de controle, criatividade e espetáculo, elevando o drift a um verdadeiro show automobilístico.
+</p>
+        </div>
+        <div class="piloto-card" onclick="toggleDesc(this)">
+            <img src="image/chris.png" alt="Chris Forsberg">
+            <h4>Chris Forsberg</h4>
+            <p class="descricao">Chris Forsberg é um piloto americano de drift, tricampeão da Fórmula Drift, conhecido por sua consistência e precisão em pistas desafiadoras. Seu estilo combina técnica refinada, leitura de curva e capacidade de manter alta performance em condições adversas. Além de conquistar títulos, Forsberg inspira novos pilotos e contribui para o crescimento do esporte nos Estados Unidos e no mundo.
+</p>
+        </div>
+    </div>
+</section>
+
+<div class="modal" id="pilotoModal">
+    <div class="modal-content">
+        <span class="modal-close" id="closeModal">&times;</span>
+        <img id="modalImg" src="" alt="Foto do piloto">
+        <h4 id="modalTitle"></h4>
+        <p id="modalDesc"></p>
+    </div>
+</div>
+
+
+
+</section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Quer falar com a equipe do <strong>Sideways Culture</strong>?</p>
+        <p>Envie um e-mail para: <a href="mailto:contato@sidewaysculture.com">contato@sidewaysculture.com</a></p>
+        <p>Ou siga nossas redes sociais:</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">TikTok</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Sideways Culture - Todos os direitos reservados.</p>
+    </footer>
+
+
+  <script src="script.js">
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('Service Worker registrado com sucesso:', reg.scope))
+        .catch(err => console.log('Falha ao registrar Service Worker:', err));
+    });
+}
+
+  </script>
+</body> 
+</html>

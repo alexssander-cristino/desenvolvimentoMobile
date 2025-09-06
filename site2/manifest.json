@@ -1,0 +1,52 @@
+{
+  "name": "Sideways Culture",
+  "short_name": "Sideways",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "description": "Um site sobre a cultura do drift, pilotos famosos, carros icônicos e história dessa modalidade.",
+  "lang": "pt-BR",
+  "dir": "auto",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "Captura de tela da página inicial do Sideways Culture"
+    }
+  ],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "História do Drift",
+      "url": "/#historia",
+      "description": "Acessa a seção sobre a história do drift"
+    },
+    {
+      "name": "Pilotos Famosos",
+      "url": "/#pilotos",
+      "description": "Visualize os pilotos mais famosos do mundo do drift"
+    },
+    {
+      "name": "Carros Icônicos",
+      "url": "/#sobre",
+      "description": "Veja os carros mais usados no drift"
+    }
+  ]
+}

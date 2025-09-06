@@ -1,0 +1,378 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo do site com gradiente neutro e motion suave */
+/* Fundo do site com cores neutras em movimento suave */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #111, #222, #333, #222);
+    background-size: 800% 800%;
+    animation: backgroundGradient 20s ease infinite;
+    color: #fff;
+}
+
+/* Animação do gradiente */
+@keyframes backgroundGradient {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header estático, ocupando 100% da área e com padding interno */
+header.inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111; /* fundo sólido do header */
+}
+
+header.inicio h1 {
+    font-size: 2rem;
+    color: #ff4c4c;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Nav */
+.nav {
+    display: flex;
+    gap: 1rem;                /* espaçamento entre links */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    position: relative;
+}
+
+/* Separador automático */
+.nav a:not(:last-child)::after {
+    content: "|";
+    margin-left: 1rem;
+    color: white;
+}
+
+/* Hover elegante */
+.nav a:hover {
+    color: red;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* altura do banner */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Canvas de borda desfocada - pequeno e discreto */
+#bgCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(10px) brightness(0.8); /* borda menor */
+    transform: scale(1.02); /* borda pequena */
+    z-index: 0;
+}
+
+/* Vídeo principal - ocupa todo o banner */
+.banner video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* preenche todo o banner */
+    object-position: center; 
+    border-radius: 6px;           /* remove borda */
+}
+
+/* Seções */
+section {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Container de cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;          /* espaço entre os cards */
+    margin-bottom: 2rem;
+    justify-content: center; /* centraliza os cards */
+}
+
+/* Card individual */
+.card {
+    background-color: #222;
+    border-radius: 8px;
+    padding: 1rem;
+    min-width: 150px;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.7);
+}
+
+.card h4 {
+    color: #ff4c4c;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Card Carousel */
+.card-carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    overflow: hidden;
+    padding: 1rem 0;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 16px;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    min-width: 200px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 0.5rem;
+    color: #ff4c4c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+
+
+/* Cards dos pilotos (mesma largura) */
+.cards-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 180px;
+    text-align: center;
+    color: #ff4c4c;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+
+.card-carousel .prev {
+    left: 0;
+}
+
+.card-carousel .next {
+    right: 0;
+}
+
+.card-carousel button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Seções com cores diferentes */
+#inicio, #historia, #sobre, #contato {
+    background-color: #111;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 1rem;
+    color: red;
+}
+
+/* Listas */
+ul {
+    list-style: disc inside;
+    margin-bottom: 1rem;
+}
+
+/* Links internos e externos */
+a {
+    color: #ff4c4c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.pilotos-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: nowrap;       /* não quebra linha */
+    overflow-x: auto;        /* adiciona rolagem horizontal se necessário */
+}
+
+.piloto-card {
+    background-color: #111;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: 200px;
+    flex: 0 0 auto;          /* garante que cada card mantenha seu tamanho */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.piloto-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s;
+}
+
+.piloto-card:hover img {
+    transform: scale(1.1);
+}
+
+.piloto-card h4 {
+    margin-top: 0.5rem;
+    color: red;
+}
+
+.piloto-card .descricao {
+    display: none;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px); /* blur do fundo */
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem; /* evita que o conteúdo encoste nas bordas */
+    overflow-y: auto; /* adiciona rolagem se o texto for muito grande */
+}
+
+.modal-content {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 600px; /* aumenta um pouco a largura */
+    width: 100%;
+    text-align: center;
+    position: relative;
+    word-wrap: break-word; /* garante que o texto quebre linha corretamente */
+}
+
+.modal-content img {
+    width: 70%; /* imagem menor, proporcional */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.modal-content h4 {
+    color: red;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.modal-content p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5; /* aumenta espaçamento entre linhas */
+    text-align: justify; /* melhor leitura */
+}
+
+/* Botão fechar */
+.modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header.inicio h1 {
+        font-size: 1.5rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .nav a:not(:last-child)::after {
+        content: ""; /* remove separador em mobile */
+    }
+
+    .banner {
+        height: 250px; /* banner menor em telas pequenas */
+    }
+
+     .pilotos-container {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden; /* remove rolagem horizontal no mobile */
+    }
+}
